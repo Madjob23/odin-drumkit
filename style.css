@@ -9,4 +9,23 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
+    align-content: center;
+}
+
+.keys {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 20%;
+    border: 2px solid gold;
+    padding: 1% 0;
+    /* box-shadow: ; */
+}
+
+.key {
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid black;
+    color: white;
+    padding: 1% 2%;
+    align-content: center;
 }
