@@ -4,6 +4,7 @@ function playSound (keyPress) {
     const pressedKey = keyPress.key;
     if (drumKeys.includes(pressedKey)) {
         const audio = document.querySelector(`audio[id=${pressedKey}]`);
+        audio.currentTime = 0;
         audio.play();
         const dispKey = document.querySelector(`div[id=${pressedKey}]`);
         dispKey.classList.add('playing');
