@@ -5,7 +5,14 @@ function playSound (keyPress) {
     if (drumKeys.includes(pressedKey)) {
         const audio = document.querySelector(`audio[id=${pressedKey}]`);
         audio.play();
+        const dispKey = document.querySelector(`div[id=${pressedKey}]`);
+        dispKey.classList.add('playing');
     }
 }
 
 document.addEventListener('keyup', playSound);
+document.addEventListener('transitionend', function (e) {
+    if (e.propertyName === 'transform') {
+        e.target.classList.remove('playing');
+    }
+});
