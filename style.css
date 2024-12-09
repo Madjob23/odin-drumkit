@@ -32,7 +32,7 @@ body {
 }
 
 .playing {
-    transform: scale(1.1);
-    border-color: gold;
+    transform: scale(1.2);
+    outline:5px gold solid;
     box-shadow: 0 0 1rem gold;
 }
